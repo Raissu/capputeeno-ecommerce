@@ -1,4 +1,6 @@
 import { styled } from 'styled-components'
+import { SearchIcon } from './search-loupe'
+import { InputHTMLAttributes } from 'react'
 
 export const PrimaryInput = styled.input`
   width: 352px;
@@ -9,9 +11,33 @@ export const PrimaryInput = styled.input`
   background-color: var(--bg-secondary);
 
   font-family: inherit; 
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 14px;
   line-height: 22px;
-  color: var(--text-dark)  
+  color: var(--text-dark);  
 `
+
+const InputContainer = styled.div`
+  position: relative;
+  width: 352px;
+
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+`
+
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
+
+export function PrimaryInputWSearchIcon(props: InputProps) {
+  return (
+    <InputContainer>
+      <PrimaryInput {...props}/>
+      <SearchIcon/>
+    </InputContainer>
+  )
+}
+
 

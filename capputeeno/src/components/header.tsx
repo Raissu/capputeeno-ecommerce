@@ -2,7 +2,7 @@
 import { styled } from 'styled-components'
 import { Saira_Stencil_One } from 'next/font/google'
 import Link from 'next/link'
-import { PrimaryInput } from './primary-input'
+import { PrimaryInput, PrimaryInputWSearchIcon } from './primary-input'
 
 interface HeaderProps {
 
@@ -35,7 +35,7 @@ export function Header(props: HeaderProps) {
     <TagHeader>
       <Logo href='/' className={sairaStencil.className}>capputeeno</Logo>
       <div>
-        <PrimaryInput placeholder='Procurando por algo específico?'/>
+        <PrimaryInputWSearchIcon placeholder='O que voce está procurando ?'/>
       </div>
     </TagHeader>
   )
