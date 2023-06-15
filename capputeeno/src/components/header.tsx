@@ -42,7 +42,7 @@ export function Header(props: HeaderProps) {
         capputeeno
       </Logo>
       <div>
-        <PrimaryInputWSearchIcon placeholder="O que voce está procurando ?" />
+        <PrimaryInputWSearchIcon placeholder="Procurando por algo específico?" />
         <CartControl />
       </div>
     </TagHeader>
