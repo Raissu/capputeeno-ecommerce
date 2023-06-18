@@ -47,10 +47,17 @@ const PriorityFilter = styled.ul`
 
   li {
     color: var(--text-dark);
+
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
+
     cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--orange-low);
+    }
   }
 
   li + li {
