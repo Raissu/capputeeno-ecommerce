@@ -1,5 +1,5 @@
 "use client";
-import { FilterByPriority } from "./filter-priority/index.";
+import { FilterByPriority } from "./filter-priority";
 import { FilterByType } from "./filter-type";
 import { FilterContainerBar } from "./styles";
 
