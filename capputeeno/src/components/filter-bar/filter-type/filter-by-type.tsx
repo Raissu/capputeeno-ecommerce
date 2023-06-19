@@ -1,38 +1,7 @@
 "use client";
 import useFilter from "@/hooks/useFilter";
 import { FilterType } from "@/types/filter-types";
-import styled from "styled-components";
-
-interface FilterItemProps {
-  selected: boolean;
-}
-
-const FilterList = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  list-style: none;
-
-  gap: 40px;
-`;
-
-const FilterItems = styled.li<FilterItemProps>`
-  font-family: inherit;
-  font-weight: ${(props) => (props.selected ? "600" : "400")};
-  font-size: 16px;
-  line-height: 22px;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  cursor: pointer;
-
-  color: var(--text-dark);
-
-  border-bottom: ${(props) =>
-    props.selected ? "4px solid var(--orange-low)" : ""};
-`;
+import { FilterList, FilterItems } from "./styles";
 
 export function FilterByType() {
   const { type, setType } = useFilter();
