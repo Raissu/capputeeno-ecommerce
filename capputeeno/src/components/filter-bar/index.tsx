@@ -1,6 +1,6 @@
 "use client";
-import { FilterByPriority } from "./filter-priority/filter-by-priority";
-import { FilterByType } from "./filter-type/filter-by-type";
+import { FilterByPriority } from "./filter-priority/index.";
+import { FilterByType } from "./filter-type";
 import { FilterContainerBar } from "./styles";
 
 interface FilterBarProps {}
