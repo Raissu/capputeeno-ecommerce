@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { ArrowIcon } from "./arrow-icon";
 import { useState } from "react";
 import useFilter from "@/hooks/useFilter";
-import { PriorityTypes } from "@/contexts/priority-types";
+import { PriorityTypes } from "@/types/priority-types";
 
 interface FilterByPriorityProps {}
 
