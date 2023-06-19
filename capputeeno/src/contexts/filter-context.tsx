@@ -1,8 +1,8 @@
 "use client";
 
 import { FilterType } from "@/types/filter-types";
+import { PriorityTypes } from "@/types/priority-types";
 import { Provider, ReactNode, createContext, useState } from "react";
-import { PriorityTypes } from "./priority-types";
 
 export const FilterContext = createContext({
   search: "",
